@@ -40,7 +40,7 @@ const Proposals = ({ address }) => {
       .catch((err) => {
         console.error("failed to check if wallet has voted", err);
       });
-  }, [proposals]);
+  }, [proposals, address]);
 
   if (proposals) {
     return (
